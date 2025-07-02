@@ -16,7 +16,7 @@ const Menu = () => {
     const fetchMenuItems = async () => {
       try {
         console.log('Fetching menu items...');
-        const response = await fetch('http://localhost:5000/api/menu-items');
+        const response = await fetch('https://cafe-website-ehmg.onrender.com');
         if (!response.ok) {
           throw new Error('Failed to fetch menu items');
         }
@@ -176,4 +176,4 @@ const Menu = () => {
   );
 };
 
-export default Menu; 
+export default Menu;
