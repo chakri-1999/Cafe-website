@@ -27,7 +27,7 @@ const menuItemSchema = new mongoose.Schema({
 const MenuItem = mongoose.model('menuitems', menuItemSchema);
 
 // MongoDB Connection
-const MONGODB_URI = "mongodb+srv://vuppalachakrapani:%40Chakri1999@cafe.fohglwb.mongodb.net/?retryWrites=true&w=majority&appName=Cafe";
+const MONGODB_URI = process.env.MONGODB_URI;
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
@@ -87,4 +87,4 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
-}); 
+});
