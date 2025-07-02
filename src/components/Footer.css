@@ -1,0 +1,161 @@
+.footer {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 4rem 2rem 2rem;
+  width: 100%;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  color: #b3b3b3;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-section ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  color: #b3b3b3;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  background-color: #3a3a3a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.newsletter-form input:focus {
+  outline: none;
+  border-color: #8b4513;
+}
+
+.newsletter-form button {
+  padding: 0.8rem 1.5rem;
+  background-color: #8b4513;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-form button:hover {
+  background-color: #6b3410;
+}
+
+.success-message {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(46, 125, 50, 0.2);
+  color: #4caf50;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #4a4a4a;
+}
+
+.footer-bottom p {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  .footer-content {
+    padding: 0 1rem;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-section {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+} 
